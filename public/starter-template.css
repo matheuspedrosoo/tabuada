@@ -1,0 +1,11 @@
+body {
+  padding-top: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
