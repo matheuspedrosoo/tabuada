@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha **/*.test.js --reporter spec",
+    "coverage": "./node_modules/.bin/nyc mocha --reporter spec **/*.test.js",
     "start": "node index.js"
   },
   "keywords": [],
@@ -13,5 +14,12 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@sinonjs/referee-sinon": "^9.0.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "sinon": "^11.0.0"
   }
 }
